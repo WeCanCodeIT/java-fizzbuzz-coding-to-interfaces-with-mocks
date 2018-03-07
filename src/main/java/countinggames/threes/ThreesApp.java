@@ -5,10 +5,10 @@ import countinggames.CountingGame;
 public class ThreesApp extends CountingGame {
 
 	public static void main(String[] args) {
-		new ThreesApp(42).count();
+		new ThreesApp(42, new Threes()).count();
 	}
 
-	public ThreesApp(int countTo) {
-		super(countTo, new Threes()::clapOrSayNumber, System.out::println);
+	public ThreesApp(int countTo, Threes threes) {
+		super(countTo, number -> threes.clapOrSay(number), response -> System.out.println(response));
 	}
 }

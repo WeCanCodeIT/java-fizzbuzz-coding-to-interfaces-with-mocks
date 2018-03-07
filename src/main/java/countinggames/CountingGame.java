@@ -2,8 +2,6 @@ package countinggames;
 
 import static java.util.stream.IntStream.rangeClosed;
 
-import java.util.stream.IntStream;
-
 public class CountingGame {
 
 	private int countTo;
@@ -11,7 +9,7 @@ public class CountingGame {
 	private ResponseWriter responseWriter;
 
 	public CountingGame(int countTo, Responder responder, ResponseWriter responseWriter) {
-		if(countTo < 1) {
+		if (countTo < 1) {
 			throw new IllegalArgumentException();
 		}
 		this.countTo = countTo;
@@ -20,7 +18,8 @@ public class CountingGame {
 	}
 
 	public void count() {
-		rangeClosed(1, countTo).mapToObj(responder::say).forEach(responseWriter::write);
+		rangeClosed(1, countTo).mapToObj(number -> responder.say(number))
+				.forEach(response -> responseWriter.write(response));
 	}
 
 }

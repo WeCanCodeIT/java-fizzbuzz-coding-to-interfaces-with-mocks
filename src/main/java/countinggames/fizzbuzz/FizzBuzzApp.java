@@ -5,10 +5,10 @@ import countinggames.CountingGame;
 public class FizzBuzzApp extends CountingGame {
 
 	public static void main(String[] args) {
-		new FizzBuzzApp(100).count();
+		new FizzBuzzApp(100, new FizzBuzz()).count();
 	}
 
-	public FizzBuzzApp(int countTo) {
-		super(countTo, new FizzBuzz()::say, System.out::println);
+	public FizzBuzzApp(int countTo, FizzBuzz fizzBuzz) {
+		super(countTo, number -> fizzBuzz.say(number), response -> System.out.println(response));
 	}
 }
