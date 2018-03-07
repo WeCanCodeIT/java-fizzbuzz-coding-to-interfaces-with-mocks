@@ -1,4 +1,4 @@
-package fizzbuzz;
+package countinggames;
 
 public interface ResponseWriter {
 

@@ -1,4 +1,4 @@
-package fizzbuzz;
+package countinggames;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+import countinggames.CountingGame;
 
 public class CountingGameTest {
 
