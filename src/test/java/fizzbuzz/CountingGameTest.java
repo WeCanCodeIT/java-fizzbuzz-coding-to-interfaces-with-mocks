@@ -33,4 +33,19 @@ public class CountingGameTest {
 		// assert
 		verify(responseWriter).write("arbitrary response");
 	}
+	
+	@Test
+	public void shouldCountToTwo() {
+		// arrange
+		CountingGame underTest = new CountingGame(2, responder, responseWriter);
+		when(responder.say(1)).thenReturn("arbitrary response");
+		when(responder.say(2)).thenReturn("second arbitrary response");
+		
+		// act
+		underTest.count();
+		
+		// assert
+		verify(responseWriter).write("arbitrary response");	
+		verify(responseWriter).write("second arbitrary response");
+	}
 }
