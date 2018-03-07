@@ -1,5 +1,7 @@
 package countinggames.fizzbuzz;
 
+import countinggames.Responder;
+
 public class FizzBuzz implements Responder {
 
 	public String say(int number) {

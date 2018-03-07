@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
+import countinggames.Responder;
 import countinggames.fizzbuzz.FizzBuzz;
 
 public class FizzBuzzTest {
