@@ -48,4 +48,9 @@ public class CountingGameTest {
 		verify(responseWriter).write("arbitrary response");	
 		verify(responseWriter).write("second arbitrary response");
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void shouldFailForBadCountToValue() {
+		new CountingGame(0, responder, responseWriter);
+	}
 }

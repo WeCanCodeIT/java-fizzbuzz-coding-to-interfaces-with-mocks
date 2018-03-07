@@ -7,6 +7,9 @@ public class CountingGame {
 	private ResponseWriter responseWriter;
 
 	public CountingGame(int countTo, Responder responder, ResponseWriter responseWriter) {
+		if(countTo < 1) {
+			throw new IllegalArgumentException();
+		}
 		this.countTo = countTo;
 		this.responder = responder;
 		this.responseWriter = responseWriter;
