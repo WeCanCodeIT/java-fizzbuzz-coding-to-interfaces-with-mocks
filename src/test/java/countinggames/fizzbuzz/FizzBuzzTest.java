@@ -12,7 +12,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayOne() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(1);
 
@@ -21,7 +21,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayTwo() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(2);
 
@@ -30,7 +30,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayFizzForThree() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(3);
 
@@ -39,7 +39,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayFizzForSix() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(6);
 
@@ -48,7 +48,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayBuzzForFive() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(5);
 
@@ -57,7 +57,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayBuzzForTen() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(10);
 
@@ -66,7 +66,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void shouldSayFizzBuzzForFifteen() {
-		Responder underTest = new FizzBuzz();
+		FizzBuzz underTest = new FizzBuzz();
 
 		String response = underTest.say(15);
 

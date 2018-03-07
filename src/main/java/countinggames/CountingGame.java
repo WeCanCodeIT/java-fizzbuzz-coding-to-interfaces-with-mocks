@@ -1,5 +1,9 @@
 package countinggames;
 
+import static java.util.stream.IntStream.rangeClosed;
+
+import java.util.stream.IntStream;
+
 public class CountingGame {
 
 	private int countTo;
@@ -16,10 +20,7 @@ public class CountingGame {
 	}
 
 	public void count() {
-		for(int current = 1; current <= countTo; current++) {
-			String response = responder.say(current);
-			responseWriter.write(response);
-		}
+		rangeClosed(1, countTo).mapToObj(responder::say).forEach(responseWriter::write);
 	}
 
 }

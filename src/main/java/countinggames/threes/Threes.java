@@ -1,11 +1,8 @@
 package countinggames.threes;
 
-import countinggames.Responder;
+public class Threes {
 
-public class Threes implements Responder {
-
-	@Override
-	public String say(int number) {
+	public String clapOrSayNumber(int number) {
 		if(isAMultipleOfThree(number) || endsInThree(number)) {
 			return "clap";
 		}

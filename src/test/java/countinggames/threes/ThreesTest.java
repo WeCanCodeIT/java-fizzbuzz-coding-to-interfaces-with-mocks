@@ -16,54 +16,54 @@ public class ThreesTest {
 
 	@Test
 	public void shouldSayOne() {
-		Responder underTest = new Threes();
+		Threes underTest = new Threes();
 
-		String response = underTest.say(1);
+		String response = underTest.clapOrSayNumber(1);
 
 		assertThat(response, is("1"));
 	}
 
 	@Test
 	public void shouldSayTwo() {
-		Responder underTest = new Threes();
+		Threes underTest = new Threes();
 
-		String response = underTest.say(2);
+		String response = underTest.clapOrSayNumber(2);
 
 		assertThat(response, is("2"));
 	}
 
 	@Test
 	public void shouldClapForThree() {
-		Responder underTest = new Threes();
+		Threes underTest = new Threes();
 
-		String response = underTest.say(3);
+		String response = underTest.clapOrSayNumber(3);
 
 		assertThat(response, is("clap"));
 	}
 
 	@Test
 	public void shouldClapForSix() {
-		Responder underTest = new Threes();
+		Threes underTest = new Threes();
 
-		String response = underTest.say(6);
+		String response = underTest.clapOrSayNumber(6);
 
 		assertThat(response, is("clap"));
 	}
 
 	@Test
 	public void shouldClapForThirteen() {
-		Responder underTest = new Threes();
+		Threes underTest = new Threes();
 
-		String response = underTest.say(13);
+		String response = underTest.clapOrSayNumber(13);
 
 		assertThat(response, is("clap"));
 	}
 	
 	@Test
 	public void shouldClapForTwentyThree() {
-		Responder underTest = new Threes();
+		Threes underTest = new Threes();
 
-		String response = underTest.say(23);
+		String response = underTest.clapOrSayNumber(23);
 
 		assertThat(response, is("clap"));	}
 }

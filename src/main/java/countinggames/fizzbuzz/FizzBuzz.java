@@ -1,8 +1,6 @@
 package countinggames.fizzbuzz;
 
-import countinggames.Responder;
-
-public class FizzBuzz implements Responder {
+public class FizzBuzz {
 
 	public String say(int number) {
 		if(isFizz(number) && isBuzz(number)) {

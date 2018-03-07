@@ -1,6 +1,5 @@
 package countinggames.threes;
 
-import countinggames.ConsoleWriter;
 import countinggames.CountingGame;
 
 public class ThreesApp extends CountingGame {
@@ -10,6 +9,6 @@ public class ThreesApp extends CountingGame {
 	}
 
 	public ThreesApp(int countTo) {
-		super(countTo, new Threes(), new ConsoleWriter());
+		super(countTo, new Threes()::clapOrSayNumber, System.out::println);
 	}
 }

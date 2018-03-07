@@ -1,6 +1,5 @@
 package countinggames.fizzbuzz;
 
-import countinggames.ConsoleWriter;
 import countinggames.CountingGame;
 
 public class FizzBuzzApp extends CountingGame {
@@ -10,6 +9,6 @@ public class FizzBuzzApp extends CountingGame {
 	}
 
 	public FizzBuzzApp(int countTo) {
-		super(countTo, new FizzBuzz(), new ConsoleWriter());
+		super(countTo, new FizzBuzz()::say, System.out::println);
 	}
 }
