@@ -1,6 +1,6 @@
 package fizzbuzz;
 
-public class FizzBuzz {
+public class FizzBuzz implements Responder {
 
 	public String say(int number) {
 		if(isFizz(number) && isBuzz(number)) {
