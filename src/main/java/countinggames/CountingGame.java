@@ -2,8 +2,6 @@ package countinggames;
 
 import static java.util.stream.IntStream.rangeClosed;
 
-import java.util.stream.IntStream;
-
 public class CountingGame {
 
 	private int countTo;

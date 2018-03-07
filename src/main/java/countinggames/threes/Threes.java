@@ -2,7 +2,7 @@ package countinggames.threes;
 
 public class Threes {
 
-	public String clapOrSayNumber(int number) {
+	public String clapOrSay(int number) {
 		if(isAMultipleOfThree(number) || endsInThree(number)) {
 			return "clap";
 		}

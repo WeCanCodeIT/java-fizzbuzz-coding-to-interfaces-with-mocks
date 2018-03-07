@@ -9,6 +9,6 @@ public class ThreesApp extends CountingGame {
 	}
 
 	public ThreesApp(int countTo) {
-		super(countTo, new Threes()::clapOrSayNumber, System.out::println);
+		super(countTo, new Threes()::clapOrSay, System.out::println);
 	}
 }
