@@ -1,4 +1,4 @@
-package fizzbuzz;
+package countinggames.fizzbuzz;
 
 public class FizzBuzz {
 
